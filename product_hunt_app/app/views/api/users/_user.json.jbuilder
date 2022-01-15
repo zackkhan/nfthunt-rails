@@ -1,0 +1,1 @@
+json.extract! user, :id, :username, :headline, :image_url, :userslug

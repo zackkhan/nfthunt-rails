@@ -1,0 +1,42 @@
+//Product Feed
+.product-feed {
+  width: 100%
+}
+
+//Products Index
+.product-index-container {
+  min-height: 800px;
+  background-color: $white;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid $gray;
+  border-radius: 1px;
+}
+
+.product-index-header {
+  height: 21px;
+  padding: 15px 15px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-index-header-border {
+  border-bottom: 1px solid $gray;
+  height: 1px;
+  margin: 0 15px;
+}
+
+.product-index-header-text {
+  font-size: 20px;
+}
+
+.product-index-header-popular-newest {
+
+}
+
+@media all and (max-width: 1100px) {
+
+}

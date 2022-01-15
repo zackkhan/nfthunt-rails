@@ -1,0 +1,119 @@
+.product-discussion {
+  margin: 0 10px 10px 10px;
+  border-radius: 2px;
+  background-color: $white;
+  box-sizing: border-box;
+  border: 1px solid $gray;
+}
+
+.thread {
+  margin-bottom: 20px;
+}
+
+.comment {
+  margin: 0 0 20px;
+  //test
+  // border: 1px solid red;
+}
+
+.child-comment {
+  margin-left: 42px;
+  border-left: 4px solid #e8e8e8;
+  margin-bottom: 0;
+  padding: 0 0 20px 20px;
+  //test
+  // border: 1px solid red;
+}
+
+//User Spotlight
+.user-spotlight {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 0 15px;
+  height: 40px;
+}
+
+.user-spotlight-content {
+  margin-left: 10px;
+  font-size: 13px;
+  line-height: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 44px;
+}
+
+.user-spotlight-username {
+  font-weight: 600;
+}
+
+.user-spotlight-username:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.user-spotlight-headline {
+  color: $text-gray;
+}
+
+//Comment Body
+.comment-body {
+  margin: 0 0 15px 42px;
+  display: block;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.comment-actions {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 0 0 42px;
+}
+
+// New Comment Form
+.new-comment-form {
+  background-color: $input-background-gray;
+  border: 1px solid $gray;
+  border-radius: 3px;
+  padding: 20px;
+  margin-bottom: 20px;
+  max-height: 500px
+}
+
+.new-comment-form-input-bar {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.new-comment-form-input-bar textarea {
+  margin-left: 10px;
+}
+
+.new-comment-form-button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.reply-form {
+  border-radius: 3px;
+  padding: 10px 20px;
+  margin-bottom: 0px;
+  max-height: 500px
+}
+
+.reply-form-input-bar {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.reply-form-input-bar textarea {
+  margin-left: 10px;
+}
+
+.reply-form-button-container {
+  display: flex;
+  justify-content: flex-end;
+}

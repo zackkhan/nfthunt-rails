@@ -1,0 +1,1 @@
+# nfthunt-rails

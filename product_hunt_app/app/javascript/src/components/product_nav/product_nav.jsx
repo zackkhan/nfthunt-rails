@@ -19,7 +19,7 @@ class ProductNav extends React.Component {
             <NavLink to="/topics/tech" 
                      className="product-nav-item"
                      activeClassName="product-nav-selected">
-              Tech
+              PFPs
             </NavLink>
           </li>
           <li>
@@ -33,21 +33,21 @@ class ProductNav extends React.Component {
             <NavLink to="/topics/books" 
                      className="product-nav-item"
                      activeClassName="product-nav-selected">
-              Books
+              Audio NFTs
             </NavLink>
           </li>
           <li>
             <NavLink to="/topics/artificial_intelligence"
                      className="product-nav-item"
                      activeClassName="product-nav-selected" >
-              Artificial Intelligence
+              Video NFTs
             </NavLink>
           </li>
           <li>
             <NavLink to="/topics/developer_tools" 
                      className="product-nav-item"
                      activeClassName="product-nav-selected">
-              Developer Tools
+              Defi NFTs
             </NavLink>
           </li>
           <li>

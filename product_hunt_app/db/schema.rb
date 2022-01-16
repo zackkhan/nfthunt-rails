@@ -39,6 +39,11 @@ ActiveRecord::Schema.define(version: 20170929023102) do
     t.integer "upvotes_count", default: 0, null: false
     t.integer "comments_count", default: 0, null: false
     t.index ["name"], name: "index_products_on_name", unique: true
+    t.string "volume_wei_24h", null: true
+    t.string "avg_volume_quote_24h", null: true
+    t.string "is_unique", null: true
+    t.string "max_price_quote", null: true
+    
   end
 
   create_table "upvotes", force: :cascade do |t|

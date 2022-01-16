@@ -7,6 +7,32 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'json'
 
+# require 'uri'
+# require 'net/http'
+# require 'openssl'
+
+# beginning = "https://api.nftport.xyz/v0/search?text="
+
+# text = "Bored%20Ape"
+
+# rest = "&chain=ethereum&page_number=1&order_by=relevance"
+
+
+# # .search_results.
+
+# http = Net::HTTP.new(url.host, url.port)
+# http.use_ssl = true
+# http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+
+# request = Net::HTTP::Get.new(url)
+# request["Content-Type"] = 'application/json'
+# request["Authorization"] = 'f84888e5-5943-4f33-8537-ff54c8201f62'
+
+# response = http.request(request)
+# puts response.read_body
+
+
+
 file = File.read('./download.json')
 
 data_hash = JSON.parse(file)
@@ -184,14 +210,24 @@ product_images = [
 # end
 
 
-
-data_hash['data']['items'].each { |element|
+# data_hash['data']['items']
+data_hash.each { |element|
   p = Product.new
   p.name = element['collection_name']
   p.tagline = Faker::Lorem.sentence(3, false, 3)
-  p.thumbnail_url = product_images.sample
+  p.tagline = element['description'][0 .. 100]
+  # if element['description']
+  #   p.description = element['description']
+  p.thumbnail_url = element['img']
+  # p.thumbnail_url = element['is_unique'] = 
+  #  product_images.sample
   p.link_url = Faker::Internet.url
   p.user = users.sample
+  p.volume_wei_24h = element['volume_wei_24h']
+  p.avg_volume_quote_24h = element['avg_volume_quote_24h']
+  p.max_price_quote = element['max_price_quote']
+
+
   if p.valid?
     p.save
   end

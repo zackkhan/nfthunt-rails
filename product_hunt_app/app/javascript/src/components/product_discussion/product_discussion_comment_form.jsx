@@ -69,7 +69,7 @@ class CommentForm extends React.Component {
             <textarea 
                   id={`textArea-${commentId}`}
                   type="text" 
-                  placeholder="What do you think of this product..." 
+                  placeholder="What do you think of this NFT..." 
                   onChange={this.handleChange}
                   value={this.state.commentText}/>
             <div id={`textCopy-${commentId}`} className="text-copy"/>
